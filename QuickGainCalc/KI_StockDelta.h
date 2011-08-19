@@ -12,7 +12,8 @@
 {
     double buyPrice, sellPrice;
     int shares;
-    double yield, gain;                 // yield is % return: yield + 1 * 100 for calculations
+    double yield, gain;                 // yield is % return: yield + 1 * 100 to store
+                                        //                    yield /= 100 - 1 for calculations
 }
 
 @property double buyPrice, sellPrice;

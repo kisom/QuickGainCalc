@@ -33,7 +33,9 @@
     double tempYield = 0.0;
     
     tempGain  = shares * ([self sellPrice] - [self buyPrice]);
-    tempYield = 100 * ([self sellPrice] / [self buyPrice]) + 1;
+    tempYield = ([self sellPrice] / [self buyPrice]);
+    tempYield++;
+    tempYield *= 100;
     
     [self setGain:tempGain];
     [self setYield:tempYield];
@@ -45,7 +47,7 @@
 {
     double tempSellPrice = 0;
     double tempGain = 0;
-    double tempYield = [self yield] / 100.0;
+    double tempYield = [self yield] / 100.0 - 1;
     
     tempSellPrice = [self buyPrice] * (1 + tempYield);
     tempGain = shares * (tempSellPrice - [self buyPrice]);
