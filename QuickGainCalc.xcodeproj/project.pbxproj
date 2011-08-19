@@ -22,13 +22,13 @@
 		2738244213FEADA8007A2480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2738244413FEADA8007A2480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2738244613FEADA8007A2480 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2738244A13FEADA8007A2480 /* QuickGainCalc-Info.plist */ = {isa = PBXFileReference; path = "QuickGainCalc-Info.plist"; sourceTree = "<group>"; };
+		2738244A13FEADA8007A2480 /* QuickGainCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickGainCalc-Info.plist"; sourceTree = "<group>"; };
 		2738244C13FEADA8007A2480 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2738244E13FEADA8007A2480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2738245013FEADA8007A2480 /* QuickGainCalc-Prefix.pch */ = {isa = PBXFileReference; path = "QuickGainCalc-Prefix.pch"; sourceTree = "<group>"; };
-		2738245113FEADA8007A2480 /* QuickGainCalcAppDelegate.h */ = {isa = PBXFileReference; path = QuickGainCalcAppDelegate.h; sourceTree = "<group>"; };
+		2738245013FEADA8007A2480 /* QuickGainCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickGainCalc-Prefix.pch"; sourceTree = "<group>"; };
+		2738245113FEADA8007A2480 /* QuickGainCalcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickGainCalcAppDelegate.h; sourceTree = "<group>"; };
 		2738245213FEADA8007A2480 /* QuickGainCalcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickGainCalcAppDelegate.m; sourceTree = "<group>"; };
-		2738245413FEADA8007A2480 /* QuickGainCalcViewController.h */ = {isa = PBXFileReference; path = QuickGainCalcViewController.h; sourceTree = "<group>"; };
+		2738245413FEADA8007A2480 /* QuickGainCalcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickGainCalcViewController.h; sourceTree = "<group>"; };
 		2738245513FEADA8007A2480 /* QuickGainCalcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickGainCalcViewController.m; sourceTree = "<group>"; };
 		2738245813FEADA8007A2480 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuickGainCalcViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
