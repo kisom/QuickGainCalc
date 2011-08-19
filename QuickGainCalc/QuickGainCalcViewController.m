@@ -21,7 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    stockDelta = [[KI_StockDelta alloc] init];
+    [self updateFields];
 }
 
 - (void)viewDidUnload
@@ -55,6 +57,16 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void) updateFields
+{
+    NSString *currencyFormat = @"%0.2f";
+    [buyPriceTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta buyPrice]]];
+    [sellPriceTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta sellPrice]]];
+    [sharesTF setText:[NSString stringWithFormat:@"%d", [stockDelta shares]]];
+    [yieldTF setText:[NSString stringWithFormat:@"%0.3f", [stockDelta yield]]];
+    [gainTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta gain]]];
 }
 
 @end
