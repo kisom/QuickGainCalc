@@ -24,5 +24,8 @@
 - (void) calcSellFromYield;             // updates sellPrice and gain
 - (void) calcSellFromGain;              // updates sellPrice and yield
 
+- (void) convertYieldForStorage:(NSString *)textYield;
+- (NSString *) convertYieldForDisplay;
+
 
 @end

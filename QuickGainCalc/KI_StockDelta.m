@@ -72,4 +72,28 @@
     return;
 }
 
+- (void) convertYieldForStorage:(NSString *)textYield
+{
+    char *yieldBuffer = malloc(16);
+    [textYield getCString:yieldBuffer maxLength:15 encoding:NSUTF8StringEncoding];
+    double tempYield  = atof(yieldBuffer);
+    
+    tempYield /= 100;
+    tempYield++;
+    [self setYield:tempYield];
+    
+    free(yieldBuffer);
+    yieldBuffer = NULL;
+    
+}
+
+- (NSString *) convertYieldForDisplay
+{
+    double tempYield = [self yield];
+    tempYield /= 100;
+    tempYield--;
+    
+    return [NSString stringWithFormat:@"%0.3f", tempYield];
+}
+
 @end
