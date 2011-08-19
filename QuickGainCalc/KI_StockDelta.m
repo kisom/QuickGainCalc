@@ -34,8 +34,6 @@
     
     tempGain  = shares * ([self sellPrice] - [self buyPrice]);
     tempYield = ([self sellPrice] / [self buyPrice]);
-    tempYield++;
-    tempYield *= 100;
     
     [self setGain:tempGain];
     [self setYield:tempYield];
@@ -47,9 +45,8 @@
 {
     double tempSellPrice = 0;
     double tempGain = 0;
-    double tempYield = [self yield] / 100.0 - 1;
     
-    tempSellPrice = [self buyPrice] * (1 + tempYield);
+    tempSellPrice = [self buyPrice] * [self yield];
     tempGain = shares * (tempSellPrice - [self buyPrice]);
     [self setSellPrice:tempSellPrice];
     [self setGain:tempGain];
@@ -63,9 +60,6 @@
     [self setSellPrice:([self buyPrice] + pricePerShare)];
     
     double tempYield = [self sellPrice] / [self buyPrice];
-    // massage the value into what we want
-    tempYield -= 1;    
-    tempYield *= 100;
     
     [self setYield:tempYield];
     
@@ -79,7 +73,6 @@
     double tempYield  = atof(yieldBuffer);
     
     tempYield /= 100;
-    tempYield++;
     [self setYield:tempYield];
     
     free(yieldBuffer);
@@ -90,8 +83,7 @@
 - (NSString *) convertYieldForDisplay
 {
     double tempYield = [self yield];
-    tempYield /= 100;
-    tempYield--;
+    tempYield *= 100;
     
     return [NSString stringWithFormat:@"%0.3f", tempYield];
 }
