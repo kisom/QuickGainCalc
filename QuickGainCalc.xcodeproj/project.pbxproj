@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2738244313FEADA8007A2480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244213FEADA8007A2480 /* UIKit.framework */; };
+		2738244513FEADA8007A2480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244413FEADA8007A2480 /* Foundation.framework */; };
+		2738244713FEADA8007A2480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244613FEADA8007A2480 /* CoreGraphics.framework */; };
+		2738244D13FEADA8007A2480 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2738244B13FEADA8007A2480 /* InfoPlist.strings */; };
+		2738244F13FEADA8007A2480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738244E13FEADA8007A2480 /* main.m */; };
+		2738245313FEADA8007A2480 /* QuickGainCalcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738245213FEADA8007A2480 /* QuickGainCalcAppDelegate.m */; };
+		2738245613FEADA8007A2480 /* QuickGainCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738245513FEADA8007A2480 /* QuickGainCalcViewController.m */; };
+		2738245913FEADA8007A2480 /* QuickGainCalcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2738245713FEADA8007A2480 /* QuickGainCalcViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2738243E13FEADA8007A2480 /* QuickGainCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickGainCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2738244213FEADA8007A2480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2738244413FEADA8007A2480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2738244613FEADA8007A2480 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2738244A13FEADA8007A2480 /* QuickGainCalc-Info.plist */ = {isa = PBXFileReference; path = "QuickGainCalc-Info.plist"; sourceTree = "<group>"; };
+		2738244C13FEADA8007A2480 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2738244E13FEADA8007A2480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2738245013FEADA8007A2480 /* QuickGainCalc-Prefix.pch */ = {isa = PBXFileReference; path = "QuickGainCalc-Prefix.pch"; sourceTree = "<group>"; };
+		2738245113FEADA8007A2480 /* QuickGainCalcAppDelegate.h */ = {isa = PBXFileReference; path = QuickGainCalcAppDelegate.h; sourceTree = "<group>"; };
+		2738245213FEADA8007A2480 /* QuickGainCalcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickGainCalcAppDelegate.m; sourceTree = "<group>"; };
+		2738245413FEADA8007A2480 /* QuickGainCalcViewController.h */ = {isa = PBXFileReference; path = QuickGainCalcViewController.h; sourceTree = "<group>"; };
+		2738245513FEADA8007A2480 /* QuickGainCalcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickGainCalcViewController.m; sourceTree = "<group>"; };
+		2738245813FEADA8007A2480 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuickGainCalcViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2738243B13FEADA8007A2480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738244313FEADA8007A2480 /* UIKit.framework in Frameworks */,
+				2738244513FEADA8007A2480 /* Foundation.framework in Frameworks */,
+				2738244713FEADA8007A2480 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2738243313FEADA8007A2480 = {
+			isa = PBXGroup;
+			children = (
+				2738244813FEADA8007A2480 /* QuickGainCalc */,
+				2738244113FEADA8007A2480 /* Frameworks */,
+				2738243F13FEADA8007A2480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2738243F13FEADA8007A2480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2738243E13FEADA8007A2480 /* QuickGainCalc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2738244113FEADA8007A2480 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2738244213FEADA8007A2480 /* UIKit.framework */,
+				2738244413FEADA8007A2480 /* Foundation.framework */,
+				2738244613FEADA8007A2480 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2738244813FEADA8007A2480 /* QuickGainCalc */ = {
+			isa = PBXGroup;
+			children = (
+				2738245113FEADA8007A2480 /* QuickGainCalcAppDelegate.h */,
+				2738245213FEADA8007A2480 /* QuickGainCalcAppDelegate.m */,
+				2738245413FEADA8007A2480 /* QuickGainCalcViewController.h */,
+				2738245513FEADA8007A2480 /* QuickGainCalcViewController.m */,
+				2738245713FEADA8007A2480 /* QuickGainCalcViewController.xib */,
+				2738244913FEADA8007A2480 /* Supporting Files */,
+			);
+			path = QuickGainCalc;
+			sourceTree = "<group>";
+		};
+		2738244913FEADA8007A2480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2738244A13FEADA8007A2480 /* QuickGainCalc-Info.plist */,
+				2738244B13FEADA8007A2480 /* InfoPlist.strings */,
+				2738244E13FEADA8007A2480 /* main.m */,
+				2738245013FEADA8007A2480 /* QuickGainCalc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2738243D13FEADA8007A2480 /* QuickGainCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2738245C13FEADA8007A2480 /* Build configuration list for PBXNativeTarget "QuickGainCalc" */;
+			buildPhases = (
+				2738243A13FEADA8007A2480 /* Sources */,
+				2738243B13FEADA8007A2480 /* Frameworks */,
+				2738243C13FEADA8007A2480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickGainCalc;
+			productName = QuickGainCalc;
+			productReference = 2738243E13FEADA8007A2480 /* QuickGainCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2738243513FEADA8007A2480 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2738243813FEADA8007A2480 /* Build configuration list for PBXProject "QuickGainCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2738243313FEADA8007A2480;
+			productRefGroup = 2738243F13FEADA8007A2480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2738243D13FEADA8007A2480 /* QuickGainCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2738243C13FEADA8007A2480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738244D13FEADA8007A2480 /* InfoPlist.strings in Resources */,
+				2738245913FEADA8007A2480 /* QuickGainCalcViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2738243A13FEADA8007A2480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2738244F13FEADA8007A2480 /* main.m in Sources */,
+				2738245313FEADA8007A2480 /* QuickGainCalcAppDelegate.m in Sources */,
+				2738245613FEADA8007A2480 /* QuickGainCalcViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2738244B13FEADA8007A2480 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2738244C13FEADA8007A2480 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2738245713FEADA8007A2480 /* QuickGainCalcViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2738245813FEADA8007A2480 /* en */,
+			);
+			name = QuickGainCalcViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2738245A13FEADA8007A2480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2738245B13FEADA8007A2480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2738245D13FEADA8007A2480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickGainCalc/QuickGainCalc-Prefix.pch";
+				INFOPLIST_FILE = "QuickGainCalc/QuickGainCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2738245E13FEADA8007A2480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickGainCalc/QuickGainCalc-Prefix.pch";
+				INFOPLIST_FILE = "QuickGainCalc/QuickGainCalc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2738243813FEADA8007A2480 /* Build configuration list for PBXProject "QuickGainCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2738245A13FEADA8007A2480 /* Debug */,
+				2738245B13FEADA8007A2480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2738245C13FEADA8007A2480 /* Build configuration list for PBXNativeTarget "QuickGainCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2738245D13FEADA8007A2480 /* Debug */,
+				2738245E13FEADA8007A2480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2738243513FEADA8007A2480 /* Project object */;
+}
