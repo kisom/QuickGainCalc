@@ -65,7 +65,7 @@
     [buyPriceTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta buyPrice]]];
     [sellPriceTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta sellPrice]]];
     [sharesTF setText:[NSString stringWithFormat:@"%d", [stockDelta shares]]];
-    [yieldTF setText:[NSString stringWithFormat:@"%0.3f", [stockDelta yield]]];
+    [yieldTF setText:[stockDelta convertYieldForDisplay]];
     [gainTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta gain]]];
 }
 
@@ -74,45 +74,36 @@
     char *sellPriceBuffer = malloc(16);
     char *buyPriceBuffer  = malloc(16);
     char *shareBuffer     = malloc(32);
-    char *yieldBuffer     = malloc(16);
     char *gainBuffer      = malloc(16);
     [[sellPriceTF text] getCString:sellPriceBuffer maxLength:15 encoding:NSUTF8StringEncoding];
     [[buyPriceTF text]  getCString:buyPriceBuffer  maxLength:15 encoding:NSUTF8StringEncoding];
     [[sharesTF text]    getCString:shareBuffer     maxLength:31 encoding:NSUTF8StringEncoding];
-    [[yieldTF text]     getCString:yieldBuffer     maxLength:15 encoding:NSUTF8StringEncoding];
     [[gainTF text]      getCString:gainBuffer      maxLength:15 encoding:NSUTF8StringEncoding];
     
     double tempSellPrice = atof(sellPriceBuffer);
     double tempBuyPrice  = atof(buyPriceBuffer);
     int tempShares       = atoi(shareBuffer);
-    double tempYield     = atof(yieldBuffer);
     double tempGain      = atof(gainBuffer);
     
-    if (tempYield > 1) {
-        tempYield--;
-        tempYield /= 100;
-    }
     
     // update the stockDelta
     [stockDelta setBuyPrice:tempBuyPrice];
     [stockDelta setSellPrice:tempSellPrice];
     [stockDelta setShares:tempShares];
-    [stockDelta setYield:tempYield];
     [stockDelta setGain:tempGain];
+    
+    [stockDelta convertYieldForStorage:[yieldTF text]];
     
     free(sellPriceBuffer);
     free(buyPriceBuffer);
     free(shareBuffer);
-    free(yieldBuffer);
     free(gainBuffer);
     
     sellPriceBuffer = NULL;
     buyPriceBuffer  = NULL;
     shareBuffer     = NULL;
-    yieldBuffer     = NULL;
     gainBuffer      = NULL;
     
-
     return;
 }
 
