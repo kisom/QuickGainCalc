@@ -25,5 +25,6 @@
 - (IBAction)doCalcSellFromReturn:(id)sender;
 - (IBAction)doCalcSellFromGain:(id)sender;
 - (void) updateFields;
+- (void) updateStockDelta;
 
 @end
