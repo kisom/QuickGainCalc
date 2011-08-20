@@ -73,6 +73,7 @@
     double tempYield  = atof(yieldBuffer);
     
     tempYield /= 100;
+    tempYield++;
     [self setYield:tempYield];
     
     free(yieldBuffer);
@@ -83,9 +84,10 @@
 - (NSString *) convertYieldForDisplay
 {
     double tempYield = [self yield];
+    tempYield--;
     tempYield *= 100;
     
-    return [NSString stringWithFormat:@"%0.3f", tempYield];
+    return [NSString stringWithFormat:@"%0.3f%%", tempYield];
 }
 
 @end

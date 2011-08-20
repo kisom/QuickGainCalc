@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <UIKit/UIColor.h>
 #import "QuickGainCalcViewController.h"
 
 @implementation QuickGainCalcViewController
@@ -67,6 +68,16 @@
     [sharesTF setText:[NSString stringWithFormat:@"%d", [stockDelta shares]]];
     [yieldTF setText:[stockDelta convertYieldForDisplay]];
     [gainTF setText:[NSString stringWithFormat:currencyFormat, [stockDelta gain]]];
+    
+    if ([stockDelta yield] < 1)
+        [yieldTF setTextColor:[UIColor redColor]];
+    else
+        [yieldTF setTextColor:[UIColor blackColor]];
+    
+    if ([stockDelta gain] < 0)
+        [gainTF setTextColor:[UIColor redColor]];
+    else
+        [gainTF setTextColor:[UIColor blackColor]];
 }
 
 - (void) updateStockDelta
