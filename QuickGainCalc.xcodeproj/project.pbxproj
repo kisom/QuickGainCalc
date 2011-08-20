@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2733866413FF694D003F047A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2733866313FF694D003F047A /* Default@2x.png */; };
+		2733866713FF69EA003F047A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2733866613FF69EA003F047A /* Default.png */; };
 		2738244313FEADA8007A2480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244213FEADA8007A2480 /* UIKit.framework */; };
 		2738244513FEADA8007A2480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244413FEADA8007A2480 /* Foundation.framework */; };
 		2738244713FEADA8007A2480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2738244613FEADA8007A2480 /* CoreGraphics.framework */; };
@@ -18,11 +20,11 @@
 		2738246113FEAF53007A2480 /* KI_StockDelta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738246013FEAF53007A2480 /* KI_StockDelta.m */; };
 		2738246F13FECA05007A2480 /* QuickGainCalc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738246E13FECA05007A2480 /* QuickGainCalc.png */; };
 		2738247113FECA17007A2480 /* QuickGainCalcRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738247013FECA17007A2480 /* QuickGainCalcRetina.png */; };
-		2738247313FECACA007A2480 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738247213FECACA007A2480 /* Default@2x.png */; };
-		2738247513FECD98007A2480 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2738247413FECD98007A2480 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2733866313FF694D003F047A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2733866613FF69EA003F047A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2738243E13FEADA8007A2480 /* QuickGainCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickGainCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2738244213FEADA8007A2480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2738244413FEADA8007A2480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,8 +42,6 @@
 		2738246013FEAF53007A2480 /* KI_StockDelta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KI_StockDelta.m; sourceTree = "<group>"; };
 		2738246E13FECA05007A2480 /* QuickGainCalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuickGainCalc.png; sourceTree = "<group>"; };
 		2738247013FECA17007A2480 /* QuickGainCalcRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuickGainCalcRetina.png; sourceTree = "<group>"; };
-		2738247213FECACA007A2480 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2738247413FECD98007A2480 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 		2738243313FEADA8007A2480 = {
 			isa = PBXGroup;
 			children = (
-				2738247413FECD98007A2480 /* Default.png */,
-				2738247213FECACA007A2480 /* Default@2x.png */,
+				2733866613FF69EA003F047A /* Default.png */,
+				2733866313FF694D003F047A /* Default@2x.png */,
 				2738247013FECA17007A2480 /* QuickGainCalcRetina.png */,
 				2738246E13FECA05007A2480 /* QuickGainCalc.png */,
 				2738244813FEADA8007A2480 /* QuickGainCalc */,
@@ -166,8 +166,8 @@
 				2738245913FEADA8007A2480 /* QuickGainCalcViewController.xib in Resources */,
 				2738246F13FECA05007A2480 /* QuickGainCalc.png in Resources */,
 				2738247113FECA17007A2480 /* QuickGainCalcRetina.png in Resources */,
-				2738247313FECACA007A2480 /* Default@2x.png in Resources */,
-				2738247513FECD98007A2480 /* Default.png in Resources */,
+				2733866413FF694D003F047A /* Default@2x.png in Resources */,
+				2733866713FF69EA003F047A /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +293,7 @@
 				2738245E13FEADA8007A2480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
